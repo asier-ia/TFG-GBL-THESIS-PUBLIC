@@ -25,99 +25,15 @@ const TECHNOLOGIES = [
       </svg>
     )
   },
-  {
-    name: "Vite",
-    svg: (
-      <svg viewBox="0 0 24 24" className="size-10 fill-none stroke-[1.25]">
-        <path d="M12 2L2 5l10 17L22 5z" className="stroke-indigo-400 fill-indigo-950/20" />
-        <path d="M11 2L6 11h5l-2 11 9-11h-6l3-9z" className="fill-amber-400 stroke-amber-500" />
-      </svg>
-    )
-  },
-  {
-    name: "Tailwind",
-    svg: (
-      <svg viewBox="0 0 24 24" className="size-10 stroke-sky-400 fill-sky-400/10 stroke-[1.25]">
-        <path d="M12 3c-1.2 0-2.4.6-3.6 1.8C6.6 6.6 6 8.4 6 10.2c0 2.4 1.2 4.2 3.6 5.4 1.2.6 2.4.6 3.6.6s2.4-.6 3.6-1.8c1.8-1.8 2.4-3.6 2.4-5.4 0-2.4-1.2-4.2-3.6-5.4C14.4 3 13.2 3 12 3z" />
-        <path d="M6 13.8c-1.2 0-2.4.6-3.6 1.8C.6 17.4 0 19.2 0 21c0 2.4 1.2 4.2 3.6 5.4 1.2.6 2.4.6 3.6.6s2.4-.6 3.6-1.8c1.8-1.8 2.4-3.6 2.4-5.4 0-2.4-1.2-4.2-3.6-5.4-1.2-.6-2.4-.6-3.6-.6z" transform="rotate(20 12 12)" />
-      </svg>
-    )
-  },
-  {
-    name: "Qdrant",
-    svg: (
-      <svg viewBox="0 0 24 24" className="size-10 stroke-red-400 fill-red-950/20 stroke-[1.25]">
-        <path d="M12 2L2 7l10 5 10-5z" />
-        <path d="M2 17l10 5 10-5" />
-        <path d="M2 12l10 5 10-5" />
-        <line x1="12" y1="12" x2="12" y2="22" />
-      </svg>
-    )
-  },
-  {
-    name: "Crawl4AI",
-    svg: (
-      <svg viewBox="0 0 24 24" className="size-10 stroke-emerald-400 fill-emerald-950/20 stroke-[1.25]">
-        <circle cx="12" cy="12" r="9" />
-        <circle cx="12" cy="12" r="5" />
-        <line x1="12" y1="1" x2="12" y2="23" />
-        <line x1="1" y1="12" x2="23" y2="12" />
-        <path d="M4.5 4.5l15 15M19.5 4.5l-15 15" />
-      </svg>
-    )
-  },
-  {
-    name: "Postgres",
-    svg: (
-      <svg viewBox="0 0 24 24" className="size-10 stroke-blue-400 fill-blue-950/20 stroke-[1.25]">
-        <rect x="3" y="3" width="18" height="18" rx="2" />
-        <line x1="3" y1="9" x2="21" y2="9" />
-        <line x1="3" y1="15" x2="21" y2="15" />
-        <line x1="9" y1="9" x2="9" y2="21" />
-      </svg>
-    )
-  },
-  {
-    name: "LangChain",
-    svg: (
-      <svg viewBox="0 0 24 24" className="size-10 stroke-green-400 fill-green-950/20 stroke-[1.25]">
-        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-      </svg>
-    )
-  },
-  {
-    name: "LangGraph",
-    svg: (
-      <svg viewBox="0 0 24 24" className="size-10 stroke-teal-400 fill-teal-950/20 stroke-[1.25]">
-        <circle cx="6" cy="6" r="3" className="fill-teal-400" />
-        <circle cx="18" cy="18" r="3" className="fill-teal-400" />
-        <circle cx="18" cy="6" r="3" />
-        <circle cx="6" cy="18" r="3" />
-        <line x1="9" y1="6" x2="15" y2="6" />
-        <line x1="6" y1="9" x2="6" y2="15" />
-        <line x1="7.5" y1="7.5" x2="16.5" y2="16.5" />
-        <line x1="16.5" y1="7.5" x2="7.5" y2="16.5" />
-      </svg>
-    )
-  },
-  {
-    name: "Python",
-    svg: (
-      <svg viewBox="0 0 24 24" className="size-10 fill-none stroke-[1.25]">
-        <path d="M12 2.5a5.5 5.5 0 0 0-5.5 5.5v2.5h5.5a1.5 1.5 0 0 1 1.5 1.5v1.5a4 4 0 0 0 4-4V7C17.5 4.5 15 2.5 12 2.5z" className="stroke-blue-400 fill-blue-950/20" />
-        <path d="M12 21.5a5.5 5.5 0 0 0 5.5-5.5v-2.5h-5.5a1.5 1.5 0 0 1-1.5-1.5V10.5a4 4 0 0 0-4 4V17c0 2.5 2.5 4.5 5.5 4.5z" className="stroke-yellow-400 fill-yellow-950/20" />
-      </svg>
-    )
-  },
-  {
-    name: "FastAPI",
-    svg: (
-      <svg viewBox="0 0 24 24" className="size-10 stroke-cyan-400 fill-cyan-950/20 stroke-[1.25]">
-        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-      </svg>
-    )
-  }
+  { name: "Vite", icon: "/icons/vite.webp" },
+  { name: "Tailwind", icon: "/icons/tailwind.webp" },
+  { name: "Qdrant", icon: "/icons/qdrant.png" },
+  { name: "Crawl4AI", icon: "/icons/crawl4ai.svg" },
+  { name: "DB", icon: "/icons/db.svg" },
+  { name: "LangChain", icon: "/icons/langchain.png" },
+  { name: "LangGraph", icon: "/icons/langGraph.png" },
+  { name: "Python", icon: "/icons/python.webp" },
+  { name: "FastAPI", icon: "/icons/fastapi.webp" }
 ]
 
 export default function Page() {
@@ -312,11 +228,11 @@ function MainContent() {
             {TECHNOLOGIES.map((tech, idx) => (
               <Reveal key={tech.name} delay={idx * 100} from="scale" className="flex flex-col items-center group relative">
                 {/* Spotlight background glow for hover */}
-                <div className="pointer-events-none absolute -top-16 left-1/2 -translate-x-1/2 size-40 rounded-full blur-2xl opacity-10 group-hover:opacity-40 transition-all duration-700 bg-radial from-gold/20 to-transparent" />
+                <div className="pointer-events-none absolute -top-16 left-1/2 -translate-x-1/2 size-40 rounded-full blur-2xl opacity-10 group-hover:opacity-60 transition-all duration-700 bg-radial from-gold/20 to-transparent" />
 
                 {/* Floating SVG Logo above capitel */}
-                <div className="relative size-16 flex items-center justify-center mb-6 select-none transition-transform duration-700 ease-out group-hover:-translate-y-4 group-hover:scale-110">
-                  {tech.svg}
+                <div className="relative size-16 flex items-center justify-center mb-6 select-none transition-all duration-300 ease-out group-hover:animate-float-hover">
+                  {"svg" in tech ? tech.svg : <img src={tech.icon} alt={tech.name} className="size-10 object-contain" />}
                 </div>
 
                 {/* Greek Column Pedestal Structure */}

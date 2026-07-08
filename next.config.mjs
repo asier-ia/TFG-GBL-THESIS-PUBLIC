@@ -6,7 +6,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: 'standalone',
+  output: 'export',
+  basePath: '/TFG-GBL-THESIS-PUBLIC',
+  assetPrefix: '/TFG-GBL-THESIS-PUBLIC/',
 }
 
 export default nextConfig
