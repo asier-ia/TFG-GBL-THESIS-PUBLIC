@@ -122,18 +122,28 @@ export function Masterpiece({ onSelectVideo }: MasterpieceProps) {
         </div>
         <div className="mx-auto mt-6 h-8 w-2/3 rounded-[100%] bg-black/75 blur-xl" />
 
-        {/* Museum Inventory Plaque */}
-        <div className="mx-auto mt-6 max-w-[200px] border border-gold/15 bg-gradient-to-b from-neutral-900/60 to-neutral-950/80 p-2.5 rounded shadow-lg text-center backdrop-blur-sm select-none transition-all duration-500 hover:border-gold/30">
-          <p className="font-mono text-[8px] uppercase tracking-[0.25em] text-gold/80">
-            INV. #{art.id.toUpperCase()}-2026
-          </p>
-          <span className="mx-auto block h-px w-8 bg-gold/20 my-1" />
-          <p className="font-serif text-[10px] italic text-foreground leading-tight tracking-wider">
-            {art.title}
-          </p>
-          <p className="font-mono text-[7px] text-muted-foreground uppercase tracking-widest mt-0.5">
-            Asier Iglesias Alconero
-          </p>
+        {/* Brushed metal base panel - monumental scale */}
+        <div className="mx-auto -mt-2 w-[90%] max-w-[400px]">
+          <div className="relative bg-gradient-to-b from-neutral-800 via-neutral-900 to-neutral-950 border-x border-t border-neutral-700/40 rounded-t-sm overflow-hidden shadow-[0_12px_32px_rgba(0,0,0,0.8)]">
+            {/* Metallic brushed texture overlay */}
+            <div className="absolute inset-0 opacity-[0.04]" style={{
+              backgroundImage: "repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(255,255,255,0.1) 1px, rgba(255,255,255,0.1) 2px)"
+            }} />
+            {/* Inner bevel ring */}
+            <div className="relative mx-5 my-4 px-4 py-3 border border-gold/10 rounded-sm bg-neutral-950/60 shadow-inner">
+              <p className="font-mono text-[10px] sm:text-xs uppercase tracking-[0.35em] text-gold/70 text-center">
+                INV. #{art.id.toUpperCase()}-2026
+              </p>
+              <p className="mt-1 font-serif text-lg sm:text-2xl font-bold tracking-wide text-gold text-center">
+                {art.title}
+              </p>
+              <p className="mt-0.5 font-mono text-[9px] sm:text-[10px] tracking-[0.25em] text-muted-foreground uppercase text-center">
+                Asier Iglesias Alconero
+              </p>
+            </div>
+            {/* Gold LED strip - wider for monumental */}
+            <div className="h-[4px] w-full bg-gradient-to-r from-transparent via-gold/60 to-transparent shadow-[0_0_12px_rgba(197,160,89,0.4)]" />
+          </div>
         </div>
       </Reveal>
 

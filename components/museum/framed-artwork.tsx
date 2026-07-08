@@ -147,18 +147,28 @@ export function FramedArtwork({ artwork, reverse = false, onSelectVideo }: Frame
           {/* Little wall shadow under the artwork */}
           <div className="mx-auto mt-4 h-6 w-3/4 rounded-[100%] bg-black/60 blur-md" />
 
-          {/* Museum Inventory Plaque */}
-          <div className="mx-auto mt-6 max-w-[180px] border border-gold/15 bg-gradient-to-b from-neutral-900/60 to-neutral-950/80 p-2 rounded shadow-lg text-center backdrop-blur-sm select-none transition-all duration-500 hover:border-gold/30">
-            <p className="font-mono text-[7px] uppercase tracking-[0.25em] text-gold/80">
-              INV. #{artwork.id.toUpperCase()}-2026
-            </p>
-            <span className="mx-auto block h-px w-8 bg-gold/20 my-1" />
-            <p className="font-serif text-[9px] italic text-foreground leading-tight tracking-wider">
-              {artwork.title}
-            </p>
-            <p className="font-mono text-[6px] text-muted-foreground uppercase tracking-widest mt-0.5">
-              Asier Iglesias Alconero
-            </p>
+          {/* Brushed metal base panel integrated below the frame */}
+          <div className="mx-auto -mt-1 w-[85%] max-w-[260px]">
+            <div className="relative bg-gradient-to-b from-neutral-800 via-neutral-900 to-neutral-950 border-x border-t border-neutral-700/40 rounded-t-sm overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.7)]">
+              {/* Metallic brushed texture overlay */}
+              <div className="absolute inset-0 opacity-[0.04]" style={{
+                backgroundImage: "repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(255,255,255,0.1) 1px, rgba(255,255,255,0.1) 2px)"
+              }} />
+              {/* Inner bevel ring */}
+              <div className="relative mx-4 my-3 px-3 py-2.5 border border-gold/10 rounded-sm bg-neutral-950/60 shadow-inner">
+                <p className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.3em] text-gold/70 text-center">
+                  INV. #{artwork.id.toUpperCase()}-2026
+                </p>
+                <p className="mt-1 font-serif text-base sm:text-lg font-bold tracking-wide text-gold text-center">
+                  {artwork.title}
+                </p>
+                <p className="mt-0.5 font-mono text-[8px] sm:text-[9px] tracking-[0.2em] text-muted-foreground uppercase text-center">
+                  Asier Iglesias Alconero
+                </p>
+              </div>
+              {/* Gold LED strip across the bottom edge */}
+              <div className="h-[3px] w-full bg-gradient-to-r from-transparent via-gold/60 to-transparent shadow-[0_0_8px_rgba(197,160,89,0.3)]" />
+            </div>
           </div>
         </div>
       </Reveal>
