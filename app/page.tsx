@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils"
 import { GalleryMap } from "@/components/museum/gallery-map"
 import { DustMotes } from "@/components/museum/dust-motes"
 import { AudioProvider, useAudio } from "@/lib/AudioContext"
+import { asset } from "@/lib/asset-path"
 
 const TECHNOLOGIES = [
   {
@@ -25,15 +26,15 @@ const TECHNOLOGIES = [
       </svg>
     )
   },
-  { name: "Vite", icon: "/icons/vite.webp" },
-  { name: "Tailwind", icon: "/icons/tailwind.webp" },
-  { name: "Qdrant", icon: "/icons/qdrant.png" },
-  { name: "Crawl4AI", icon: "/icons/crawl4ai.svg" },
-  { name: "DB", icon: "/icons/db.svg" },
-  { name: "LangChain", icon: "/icons/langchain.png" },
-  { name: "LangGraph", icon: "/icons/langGraph.png" },
-  { name: "Python", icon: "/icons/python.webp" },
-  { name: "FastAPI", icon: "/icons/fastapi.webp" }
+  { name: "Vite", icon: asset("/icons/vite.webp") },
+  { name: "Tailwind", icon: asset("/icons/tailwind.webp") },
+  { name: "Qdrant", icon: asset("/icons/qdrant.png") },
+  { name: "Crawl4AI", icon: asset("/icons/crawl4ai.svg") },
+  { name: "DB", icon: asset("/icons/db.svg") },
+  { name: "LangChain", icon: asset("/icons/langchain.png") },
+  { name: "LangGraph", icon: asset("/icons/langGraph.png") },
+  { name: "Python", icon: asset("/icons/python.webp") },
+  { name: "FastAPI", icon: asset("/icons/fastapi.webp") }
 ]
 
 export default function Page() {
@@ -293,7 +294,7 @@ function MainContent() {
             {/* Scroll 1 - Sello curatorial de la Sala Uno */}
             <div className="mt-10 opacity-45 hover:opacity-90 transition-opacity duration-700 select-none pointer-events-auto cursor-default">
               <Image
-                src="/scroll/scroll-1.png"
+                src={asset("/scroll/scroll-1.png")}
                 alt="Scroll ornament 1"
                 width={240}
                 height={158}
@@ -313,7 +314,7 @@ function MainContent() {
         >
           <Reveal from="left" delay={300}>
             <Image
-              src="/scroll/scroll-2.png"
+              src={asset("/scroll/scroll-2.png")}
               alt="Scroll ornament 2"
               width={300}
               height={224}
@@ -353,7 +354,7 @@ function MainContent() {
           {/* Scroll 3 - Sello de cierre del Corredor */}
           <div className="mt-8 opacity-40 hover:opacity-85 transition-opacity duration-700 select-none pointer-events-auto cursor-default">
             <Image
-              src="/scroll/scroll-3.png"
+              src={asset("/scroll/scroll-3.png")}
               alt="Scroll ornament 3"
               width={300}
               height={224}

@@ -6,6 +6,7 @@ import { obraMaestra } from "./artworks"
 import { Reveal } from "./reveal"
 import { useLanguage } from "@/lib/LanguageContext"
 import { cn } from "@/lib/utils"
+import { asset } from "@/lib/asset-path"
 
 type MasterpieceProps = {
   onSelectVideo?: (videoUrl: string) => void
@@ -104,7 +105,7 @@ export function Masterpiece({ onSelectVideo }: MasterpieceProps) {
           >
             <div className="relative h-full w-full overflow-hidden rounded-[1px] shadow-[inset_0_0_30px_rgba(0,0,0,0.95)]">
               <Image
-                src={art.image || "/placeholder.svg"}
+                src={art.image || asset("/placeholder.svg")}
                 alt={art.title}
                 fill
                 sizes="(max-width: 1024px) 92vw, 1024px"

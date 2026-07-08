@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { useLanguage } from "@/lib/LanguageContext"
+import { asset } from "@/lib/asset-path"
 
 export function EntranceHero() {
   const { t } = useLanguage()
@@ -14,7 +15,7 @@ export function EntranceHero() {
         className="absolute left-[6vw] top-[40%] z-0 select-none pointer-events-auto cursor-default opacity-35 hover:opacity-75 transition-opacity duration-1000 hidden sm:block"
       >
         <Image
-          src="/scroll/scroll-4.png"
+          src={asset("/scroll/scroll-4.png")}
           alt="Scroll ornament 4"
           width={300}
           height={224}

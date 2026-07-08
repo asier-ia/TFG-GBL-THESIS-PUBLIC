@@ -6,6 +6,7 @@ import type { Artwork } from "./artworks"
 import { Reveal } from "./reveal"
 import { cn } from "@/lib/utils"
 import { useLanguage } from "@/lib/LanguageContext"
+import { asset } from "@/lib/asset-path"
 
 type FramedArtworkProps = {
   artwork: Artwork
@@ -128,7 +129,7 @@ export function FramedArtwork({ artwork, reverse = false, onSelectVideo }: Frame
             <div className={cn("relative aspect-[4/5] w-full overflow-hidden rounded-sm transition-all duration-500", frameClass)}>
               <div className="relative h-full w-full overflow-hidden rounded-[1px] shadow-[inset_0_0_20px_rgba(0,0,0,0.8)]">
                 <Image
-                  src={artwork.image || "/placeholder.svg"}
+                  src={artwork.image || asset("/placeholder.svg")}
                   alt={artwork.title}
                   fill
                   sizes="(max-width: 768px) 74vw, 384px"
