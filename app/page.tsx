@@ -655,7 +655,7 @@ function MainContent() {
             {/* Dynamic Social / Contact Action Links */}
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
               <a
-                href="https://github.com/asieriglesias"
+                href="https://github.com/asier-ia"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-5 py-2.5 rounded-full border border-gold/40 bg-gold/5 font-mono text-[11px] sm:text-xs uppercase tracking-widest text-gold hover:bg-gold hover:text-black transition-all duration-300"
@@ -663,7 +663,7 @@ function MainContent() {
                 GitHub
               </a>
               <a
-                href="https://linkedin.com/in/asier-iglesias-alconero"
+                href="https://www.linkedin.com/in/asier-iglesias-alconero-2aa323300/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-5 py-2.5 rounded-full border border-gold/40 bg-gold/5 font-mono text-[11px] sm:text-xs uppercase tracking-widest text-gold hover:bg-gold hover:text-black transition-all duration-300"
@@ -671,10 +671,12 @@ function MainContent() {
                 LinkedIn
               </a>
               <a
-                href="mailto:asier.iglesias.alconero@gmail.com"
+                href="https://www.instagram.com/asier_iglesias21/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-5 py-2.5 rounded-full border border-gold/40 bg-gold/5 font-mono text-[11px] sm:text-xs uppercase tracking-widest text-gold hover:bg-gold hover:text-black transition-all duration-300"
               >
-                {language === "EU" ? "E-posta" : language === "ES" ? "Correo" : "Email"}
+                Instagram
               </a>
               <button
                 onClick={() => setShowAtelier(false)}

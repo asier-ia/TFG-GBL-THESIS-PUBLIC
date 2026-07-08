@@ -1,6 +1,7 @@
 "use client"
 
 import React, { createContext, useContext, useState, useEffect, useRef } from "react"
+import { asset } from "@/lib/asset-path"
 
 type AudioContextType = {
   isPlaying: boolean
@@ -21,7 +22,7 @@ export function AudioProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     // Create ambient audio player with new classical art music
-    const audio = new Audio("/audio/sonican-art-classical-art-music-507426.mp3")
+    const audio = new Audio(asset("/audio/sonican-art-classical-art-music-507426.mp3"))
     audio.loop = true
     audio.volume = 0 // Start muted for fade-in
     audioRef.current = audio
